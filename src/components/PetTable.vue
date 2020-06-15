@@ -6,6 +6,7 @@
         <router-link :to="`/pets/${species}/${data.index}`">
         {{data.value}}
         </router-link>
+        <slot></slot>
       </template>
        </b-table>
     </div>

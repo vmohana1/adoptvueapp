@@ -1,9 +1,9 @@
 export default {
-    animalsCount: (state) => {
+    animalsCount: function animalsCount(state){
         return state.cats.length + state.dogs.length;
     },
-    getAllCats:(state) =>{
-        return state.pets.filter((pet) => {
+    getAllCats: function getAllCats(state){
+        return state.pets.filter(function(pet){
             return pet.species === 'cat'
         })
     }

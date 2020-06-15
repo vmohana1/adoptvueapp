@@ -1,11 +1,11 @@
 <template>
   <div class="home-view-container">
     <h1>Adopt a Pet</h1>
-    {{'Total Cats Count:' +getAllCats.length}}
+    <!-- {{'Total Cats Count:' +getAllCats.length}}
     <br>
-    {{'Total Pets Count:' +animalsCount}}
+    {{'Total Pets Count:' +animalsCount}} -->
     <br>
-    <button class="btn btn-primary" style="margin-top:15px;" @click="togglePetForm">Add New Pet</button>
+    <button class="btn btn-primary" style="margin-top:15px;" @click="togglePetForm()">Add New Pet</button>
 
     <b-form @submit.prevent="handleSubmit()"  v-if="showPetForm">
       <b-form-group id="input-group-2" label="Pet's Name:" label-for="input-2">
